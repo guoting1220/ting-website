@@ -32,11 +32,11 @@ $(document).ready(function (){
 	}); 
 
 	$("#btn_jeopardy").click(function () {
-		window.open("https://www.google.com/");
+		window.open("https://guoting1220.github.io/jeopardy/");
 	}); 
 
 	$("#btn_tv_maze").click(function () {
-		window.open("tv-maze/tvmaze.html");
+		window.open("https://guoting1220.github.io/ajax-tv-maze/");
 	}); 
 
 	$("#btn_giphy_party").click(function () {
@@ -44,7 +44,7 @@ $(document).ready(function (){
 	}); 
 
 	$("#btn_movies_rating").click(function () {
-		window.open("movies-rating/index.html");
+		window.open("https://guoting1220.github.io/movie-rating-app/");
 	}); 
 
 	$("#btn_connect_4").click(function () {
@@ -56,15 +56,15 @@ $(document).ready(function (){
 	}); 
 
 	$("#btn_memory_game").click(function () {
-		window.open("memory_game/index.html");
+		window.open("https://guoting1220.github.io/memory_game/");
 	}); 
    
    $("#btn_codeplayer").click(function(){
-	   window.open("code-player/index.html");
+	   window.open("https://guoting1220.github.io/code-player/");
    });   
    
    $("#btn_recreationTester").click(function(){
-	   window.open("reaction-tester/index.html");
+	   window.open("https://guoting1220.github.io/reaction-tester/");
    });   
    
    $("#slidershow").carousel();
