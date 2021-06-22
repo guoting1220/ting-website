@@ -185,4 +185,12 @@ margin-bottom: 1rem;;
   color: white;
 }
 
+.contactCard {
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: #F5F6F7;
+}
 
+.email a {
+  color: #888;
+}
