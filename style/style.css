@@ -111,6 +111,10 @@ margin-bottom: 1rem;;
    border: 1px solid #888;  
 }
 
+.portfolio-box .btn:hover {
+  background-color: #F5F6F7;
+}
+
 .portfolio-box-image {
 	overflow: hidden;
 	border-radius: 4px;
