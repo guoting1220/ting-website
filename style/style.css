@@ -26,7 +26,7 @@ h1, h2 {
   line-height: 50px;  
 }
 
-h3 {
+h3, h4{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 22px;
   font-weight: 300;
