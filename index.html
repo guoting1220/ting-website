@@ -1,748 +1,274 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <title>Ting Guo's Website</title>
-  <meta charset="utf-8" />
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!--responsive design!!-->
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
-    integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
-    crossorigin="anonymous">
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"
-    integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
   <link rel="stylesheet" href="style/style.css">
+  <title>Ting Guo's Website</title>
 </head>
-<!-- =========================================================================================================================================== -->
 
-<body data-spy="scroll" data-target=".navbar-collapse">
-
-  <div id="scrollIcon">
-    <span class="glyphicon glyphicon-triangle-top"></span>
-    <span class="glyphicon glyphicon-triangle-bottom"></span>
-  </div>
-
-  <div id="navBarDiv" class="navbar navbar-inverse navbar-fixed-top">
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="0">
+  <!-- Navbar ------------------------------------------->
+  <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-md">
     <div class="container">
-      <div class="navbar-header">
-        <div class="navbar-brand" id="logo">Ting Guo</div>
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse"
-          aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse">
-        <ul class="nav navbar-nav" id="toggle">
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#summary">SUMMARY</a></li>
-          <li><a href="#education">EDUCATION</a></li>
-          <li><a href="#skills">SKILLS</a></li>
-          <li><a href="#projects">PROJECTS</a></li>
-          <li><a href="#experience">EXPERIENCE</a></li>
-          <li><a href="#interests">INTERESTS</a></li>
-          <li><a href="#myGallery">MY GALLERY</a></li>
-          <li><a href="#contact">CONTACT</a></li>
+      <h1 class="navbar-brand font-weight-bold "><a href="#home">G.T.</a></h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resume">Resume</a>
+          </li>
         </ul>
       </div>
     </div>
+  </nav>
+
+  <!-- Home ----------------------------------------------->
+  <div id="home" class="page">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 offset-md-4">
+          <div class="portrait mb-3">
+            <img src="images/myphoto/portrait-2.jpg" class="rounded-circle img-thumbnail">
+          </div>
+        </div>
+        <div class="col-md-8 offset-md-2">
+          <h2 class="">I am Ting Guo</h2>
+          <div class="description mt-3">
+            <p>A full-stack software developer</p>
+            <p>passionate about building web applications with high quality and beautiful design.
+            </p>
+          </div>
+          <div class="">  
+            <a class="btn btn-outline-secondary mx-2" href="#projects">Portfolio</a>
+            <a class="btn btn-outline-secondary mx-2" href="#resume">Resume</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
-  <!-- page 1:  home page-------------------------------------- -->
-  <div id="home" class="contentClass">
+  <!-- About ------------------------------------------>
+  <div id="about" class="page">
     <div class="container">
-      <div class="row" id="homeTopRow">
-        <div id="imgDiv" class="col-md-2 col-md-offset-2">
-          <div class="center"><img src="image/me.jpg"></div>
+      <h2>About Me</h2>
+      <hr>
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <div class="about-box">
+            <p>Passionate about building web applications with high quality and beautiful design.
+              Experienced in immersive hands-on learning materials and in-depth projects.
+              Mastered in full stack web development specializing in React, Node.js, Express, Python and Flask.
+              Looking forward to applying my great passion for coding and solid technical to a place that is
+              looking for a responsible, hardworking, detail-oriented, and loyal team player.</p>
+          </div>
         </div>
-        <div id="hiRow" class="col-md-5 col-md-offset-1">
-          <h3 class="center">
+        <div class="col-md-8 offset-md-2">
+          <div class="skill-box container text-left mt-4">
+            <h4 class="text-center font-weight-bold">Skills</h4>
             <div class="row">
-              <div class="col-md-6">
-                <span id="sayHi"></span>
+              <div class="col-lg-2 skilltitle">
+                Front End
               </div>
-              <div class="col-md-6" id="myName">
-                I am Ting Guo
+              <div class="col-lg-10">
+                HTML, CSS, JavaScript, AJAX, jQuery, Bootstrap, React, Redux, Responsive Design
               </div>
             </div>
-
-          </h3>
-          <h4 class="center">Welome to know a bit about me ...</h4>
-        </div>
-      </div>
-
-      <div class="row menue">
-        <div class="btn col-md-2 col-md-offset-2">
-          <li><a href="#summary"><span class="glyphicon glyphicon-pencil"></span> SUMMARY</a></li>
-        </div>
-        <div class="btn col-md-2">
-          <li><a href="#education"><span class="glyphicon glyphicon-education"></span> EDUCATION</a></li>
-        </div>
-        <div class="btn col-md-2">
-          <li><a href="#skills"><span class="glyphicon glyphicon-blackboard"></span> SKILLS</a></li>
-        </div>
-        <div class="btn col-md-2">
-          <li><a href="#projects"><span class="glyphicon glyphicon-list-alt"></span> PROJECTS</a></li>
-        </div>
-      </div>
-      <div class="row menue">
-        <div class="btn  col-md-2 col-md-offset-2">
-          <li><a href="#experience"><span class="glyphicon glyphicon-road"></span> EXPERIENCE</a></li>
-        </div>
-        <div class="btn col-md-2">
-          <li><a href="#interests"><span class="glyphicon glyphicon-heart"></span> INTERESTS</a></li>
-        </div>
-        <div class="btn col-md-2">
-          <li><a href="#myGallery"><span class="glyphicon glyphicon-picture"></span> MY GALLERY</a></li>
-        </div>
-        <div class="btn col-md-2">
-          <li><a href="#contact"><span class="glyphicon glyphicon-envelope"></span> CONTACT</a></li>
+            <div class="row">
+              <div class="col-lg-2 skilltitle">
+                Back End
+              </div>
+              <div class="col-lg-10">
+                Python, Flask, Node.js, Express
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-2 skilltitle">
+                Database
+              </div>
+              <div class="col-lg-10">
+                SQL, PostgreSQL
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-2 skilltitle">
+                Others
+              </div>
+              <div class="col-lg-10">
+                Git/GitHub, RESTful APIs, JSON, Jest Testing, Data Structures, Algorithms
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
   </div>
 
-  <!-- page 2: summary------------------------------- -->
-  <div id="summary" class="contentClass">
+  <!-- Portfolio -------------------------------------------->
+  <div id="projects" class="portfolio-container page">
     <div class="container">
-      <div class="row topRow center">SUMMARY</div>
-
       <div class="row">
-        <div class="col-md-8 col-md-offset-2 " id="sumContent">
-          <p> My name is Ting Guo. I’m currently enrolled in the Software Engineering program at Springboard coding
-            bootcamp. </p>
+        <div class="col">
+          <h2>Portfolio</h2>
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Bay Sharing ---------------------------------->
+        <div class="col-md-4 portfolio-box">
+          <div class="portfolio-box-image">
+            <a href="baysharing.html"><img src="images/portfolio/baysharing/1.png" alt=""></a>
+          </div>
+          <h3><a href="baysharing.html">Bay Sharing</a> <i class="fas fa-angle-right"></i></h3>
+          <div class="portfolio-box-date"><i class="far fa-calendar"></i> May 2021</div>
           <p>
-            I've worked as a lecturer in the college for 5 years. Then I came to America to join my husband. With a
-            great interest and passion for software programming, I went back to the university to study Computer Science
-            and got my master degree. In the past several years after graduation, I spent a wonderful time with my young
-            children and my family, while my passion
-            for coding never fade and I have always been preparing to get back to my major someday in the future. Now
-            it's the time
-            and I am so thrilled to start my new life path.
+            Post your items and share with other
+            people or families in the Bay Area.
           </p>
-          <p>
-            Experienced immersive hands-on course materials and in-depth projects in Springboard software engineering
-            career track program, I am able to independently build user friendly full-stack web applications with high
-            quality using HTML, CSS, JavaScript, jQuery, AJAX, Bootstrap, React.js, Redux, Node.js, Express, Python,
-            Flask and SQL. The intensive, challenging and enjoyable experience shaped my front-end and back-end web
-            development skills, databases, and data structures and algorithms knowledge, and drove me to be more
-            motivated to start my career as a web developer. I am looking forward to applying my great passion for web
-            development and solid technical skills to a place that is looking for a responsible, hardworking,
-            detail-oriented, and loyal team player.
+          <p class="mb-5">
+            <a href="https://github.com/guoting1220/bay-sharing" target="_blank" class="btn btn-sm mr-1"
+              role="button">Source Code</a>
+            <a href="https://baysharing.surge.sh/" target="_blank" class="btn btn-sm" role="button">View App</a>
           </p>
         </div>
-      </div>
 
+        <!-- Meal Joy ---------------------------------------->
+        <div class="col-md-4 portfolio-box">
+          <div class="portfolio-box-image">
+            <a href="mealjoy.html"><img src="images/portfolio/mealjoy/1.png" alt=""></a>
+          </div>
+          <h3><a href="mealjoy.html">Meal Joy</a> <i class="fas fa-angle-right"></i></h3>
+          <div class="portfolio-box-date"><i class="far fa-calendar"></i> December 2020</div>
+          <p>
+            Explore kinds of recipes, DIY your owns and make the weekly meal plan.
+          </p>
+          <p class="mb-5">
+            <a href="https://github.com/guoting1220/meal-joy" target="_blank" class="btn btn-sm mr-1"
+              role="button">Source Code</a>
+            <a href="https://capstone-1-meal-plan.herokuapp.com" target="_blank" class="btn btn-sm" role="button">View
+              App</a>
+          </p>
+        </div>
+
+        <!-- GoJobs --------------------------------------------->
+        <div class="col-md-4 portfolio-box">
+          <div class="portfolio-box-image">
+            <a href="gojobs.html"><img src="images/portfolio/gojobs/1.png" alt=""></a>
+          </div>
+          <h3><a href="gojobs.html">GoJobs</a> <i class="fas fa-angle-right"></i></h3>
+          <div class="portfolio-box-date"><i class="far fa-calendar"></i> March 2021</div>
+          <p>A mock job board. All the jobs in one, convenience place!
+          </p>
+          <p class="mb-5">
+            <a href="https://github.com/guoting1220/react-fullstack-gojobs" target="_blank" class="btn btn-sm mr-1"
+              role="button">Source Code</a>
+            <a href="https://gojobs.surge.sh/" target="_blank" class="btn btn-sm" role="button">View App</a>
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 
 
-  <!-- page 3: education------------------------------- -->
-  <div id="education" class="contentClass">
+  <!-- Contact ------------------------------------------>
+  <div id="contact" class="page">
     <div class="container">
-      <div class="row topRow center">EDUCATION</div>
       <div class="row">
-        <div class="col-md-8 col-md-offset-2" id="eduList">
-          <h4><span class="glyphicon glyphicon-education"></span> Certificate of Springboard Software Engineering Career
-            Track</h4>
-          <i>Springboard, June 2021</i><br>
-          <input type="button" value="+"><span class="relCourse"> Certificate</span>
-          <div class="courseList">
-            <embed src="image/certificate.pdf" width="750" height="375">
-          </div>
-          <br><br>
-          <h4><span class="glyphicon glyphicon-education"></span> M.S. in Computer Science</h4>
-          <i>San Diego State University, San Diego, CA -December 2015 <b>GPA: 3.96 / 4.0</b></i><br>
-          <input type="button" value="+"><span class="relCourse"> Relevant Courses</span>
-          <div class="courseList">
-            <ul>
-              <li>Advanced Programming Languages (C++, Java, Prolog, SR programming)</li>
-              <li>Combinatorial Algorithms</li>
-              <li>Database Theory Implement (Oracle SQL, JDBC programming in Java)</li>
-              <li>Computer Vision</li>
-              <li>Intelligent System and Control</li>
-            </ul>
-          </div>
-          <br><br>
-          <h4><span class="glyphicon glyphicon-education"></span> M.S. in Electronic Science</h4>
-          <i>Huazhong University of Science and Technology, China -May 2007 <b>GPA: 83.7 / 100</b></i><br>
-          <input type="button" value="+"><span class="relCourse"> Relevant Courses</span>
-          <div class="courseList">
-            <ul>
-              <li>Theory of Circuitry</li>
-              <li>Electronic Technology</li>
-              <li>Integrated Circuit Design</li>
-            </ul>
-          </div>
-          <br><br>
-          <h4><span class="glyphicon glyphicon-education"></span> B.S. in Electronic Science</h4>
-          <i>Huazhong University of Science and Technology, China -May 2004 <b>GPA: 84.2 / 100</b></i><br>
-          <input type="button" value="+"><span class="relCourse"> Relevant Courses</span>
-          <div class="courseList">
-            <ul>
-              <li>Computer Theory</li>
-              <li>Fundamental Theory of Circuit</li>
-              <li>Software Engineering</li>
-              <li>C Programming</li>
-            </ul>
-          </div>
+        <div class="col">
+          <h2>Contact Me</h2>
+          <hr>
         </div>
       </div>
-    </div>
-  </div>
 
-  <!-- page 4: skills------------------------------- -->
-  <div id="skills" class="contentClass">
-    <div class="container">
-      <div class="row topRow center">SKILLS</div>
       <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-          <h4>Front-End</h4>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>AJAX</li>
-            <li>jQuery</li>
-            <li>Bootstrap</li>
-            <li>React</li>
-            <li>Redux</li>
-          </ul>
-          <br>
-          <h4>Back-End</h4>
-          <ul>
-            <li>Python</li>
-            <li>Flask</li>
-            <li>Node.js</li>
-            <li>Express</li>
-          </ul>
-          <br>
-          <h4>Others</h4>
-          <ul>
-            <li>SQL</li>
-            <li>PostgreSQL</li>
-            <li>Jasmine/jest</li>
-            <li>Git/GitHub</li>
-            <li>Data Structure</li>
-            <li>Algorithms</li>
-          </ul>
-          <br>
+        <div class="col-md-2 offset-md-3">
+          <i class="fas fa-envelope fa-2x"></i>
         </div>
-      </div>
-      <!-- <div class="row">
-					<div class="col-md-10 col-md-offset-1">
-						<h4 class="center">Summary</h4>
-					</div>
-		</div> -->
-      <!-- <br>
-		<div id="skillSumary">	
-			<div class="row">		
-						<div class="col-md-5 col-md-offset-1">
-							<p>Extensive experience in object-oriented programming like JAVA;</p>
-						</div>	
-						<div class="col-md-5">
-							<p>Strong competencies in data structures, algorithms;</p>
-						</div>
-			</div>
-
-			<div class="row">		
-						<div class="col-md-5 col-md-offset-1">
-							<p>Excellent programming skills in JavaScript/HTML/CSS;</p>
-						</div>	
-						<div class="col-md-5">
-							<p>Familiar with jQuery, Ajax, Bootstrap and Responsive Design;</p>
-						</div>
-			</div>	
-
-			<div class="row">		
-						<div class="col-md-5 col-md-offset-1">
-							<p>Solid foundation in database, SQL, PL/SQL and T-SQL;</p>
-						</div>	
-						<div class="col-md-5">
-							<p>Fascinated by software programming and web development.</p>
-						</div>
-			</div>	
-					
-		</div>		 -->
-    </div>
-  </div>
-
-
-  <!-- page 5: projects------------------------------- -->
-  <div id="projects" class="contentClass">
-    <div class="container">
-      <div class="topRow center">PROJECTS</div>
-      <div class="row center">
-
-        <!-- Bay Sharing ------------------------------------->
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail appSnapshot center">
-            <div id="baySharing" class="carousel slide" data-interval="false">
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                  <img src="image/baysharing-0.png" alt="bay sharing">
-                </div>
-
-                <div class="item">
-                  <img src="image/baysharing-1.png" alt="bay sharing">
-                </div>
-
-                <div class="item">
-                  <img src="image/baysharing-2.png" alt="bay sharing">
-                </div>
-
-                <div class="item">
-                  <img src="image/baysharing-3.png" alt="bay sharing">
-                </div>
-
-                <div class="item">
-                  <img src="image/baysharing-4.png" alt="bay sharing">
-                </div>
-              </div>
-
-              <!-- Left and right controls -->
-              <a class="left carousel-control" href="#baySharing" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#baySharing" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-
-            <div class="caption">
-              <h4 class="center appTitle">Bay Sharing</h4>
-              <small class="appInfo">
-                A single page application providing a platform where the users can share their items with other
-                people or families in
-                the Bay Area.
-              </small>
-              <p class="center">
-                <a href="https://github.com/guoting1220/bay-sharing" target="_blank" class="btn githubBtn btn-xs"
-                  role="button">GitHub Link</a>
-                <a href="https://baysharing.surge.sh/" target="_blank" class="btn visitAppBtn btn-xs"
-                  role="button">Visit the app</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <!---------------------------------------- -->
-
-        <!-- Meal Joy ------------------------------------->
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail appSnapshot center">
-            <div id="mealJoy" class="carousel slide" data-interval="false">
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                  <img src="image/mealjoy-0.png" alt="mealJoy">
-                </div>
-
-                <div class="item">
-                  <img src="image/mealjoy-1.png" alt="mealJoy">
-                </div>
-
-                <div class="item">
-                  <img src="image/mealjoy-2.png" alt="mealJoy">
-                </div>
-
-                <div class="item">
-                  <img src="image/mealjoy-3.png" alt="mealJoy">
-                </div>
-
-                <div class="item">
-                  <img src="image/mealjoy-4.png" alt="mealJoy">
-                </div>
-
-                <div class="item">
-                  <img src="image/mealjoy-5.png" alt="mealJoy">
-                </div>
-              </div>
-
-              <!-- Left and right controls -->
-              <a class="left carousel-control" href="#mealJoy" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#mealJoy" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-
-            <div class="caption">
-              <h4 class="center appTitle">Meal Joy</h4>
-              <small class="appInfo">
-                A web application that users can explore tons of healthy recipes, create their DIY recipes and make
-                their weekly meal plan.
-              </small>
-              <p class="center">
-                <a href="https://github.com/guoting1220/meal-joy" target="_blank" class="btn githubBtn btn-xs"
-                  role="button">GitHub Link</a>
-                <a href="https://capstone-1-meal-plan.herokuapp.com" target="_blank" class="btn visitAppBtn btn-xs"
-                  role="button">Visit the
-                  app</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <!---------------------------------------- -->
-
-        <!-- MyBlog ------------------------------------->
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail appSnapshot center">
-            <div id="myblog" class="carousel slide" data-interval="false">
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                  <img src="image/myblog-0.png" alt="myblog">
-                </div>
-
-                <div class="item">
-                  <img src="image/myblog-1.png" alt="my blog">
-                </div>
-
-                <div class="item">
-                  <img src="image/myblog-2.png" alt="my blog">
-                </div>              
-              </div>
-
-              <!-- Left and right controls -->
-              <a class="left carousel-control" href="#myblog" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#myblog" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-
-            <div class="caption">
-              <h4 class="center appTitle">My Blog</h4>
-              <small class="appInfo">
-                A convenient web application for user to make a blog of life.
-              </small>
-              <p class="center">
-                <a href="https://github.com/guoting1220/my-blog" target="_blank" class="btn githubBtn btn-xs"
-                  role="button">GitHub Link</a>
-                <a href="https://react-myblog.surge.sh/" target="_blank" class="btn visitAppBtn btn-xs"
-                  role="button">Visit the
-                  app</a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <!---------------------------------------- -->
-
-        <!-- <h2><b>Personal Website Design</b></h2>
-			<div>
-					<p><i>---- 07/2015 - 10/2015</i></p>
-					<p>Built from scratch with HTML, CSS, JavaScript,  jQuery and Bootstrap. Clean and responsive design.</p>
-					<p>URL: <u><a href="http://www-rohan.sdsu.edu/~tguo/index.html"> http://www-rohan.sdsu.edu/~tguo/index.html</a></u></p>				
-			</div> -->
-
-        <!-- <h2><b>Meal Plan App</b> <button class="btn btn-success" id="btn_mealPlan">Try it</button></h2>
-			<div>
-				<p><i>---- 12/2020</i></p>
-				<p>Using HTML, CSS, JavaScript, jQuery, Bootstrap, Python, Flask, PostgreSQL designed a web app which allows users check
-				out the recipes for kinds of meals, DIY their own recipes, and add recipes to their weekly meal plan. </p>
-			</div>
-
-			<h2><b>Jeopardy</b> <button class="btn btn-success" id="btn_jeopardy">Try it</button></h2>
-			<div>
-				<p><i>---- 10/2020</i></p>
-				<p>Are you ready? Let's play Jeopardy! </p>
-			</div>
-
-			<h2><b>TV Maze</b> <button class="btn btn-success" id="btn_tv_maze">Try it</button></h2>
-			<div>
-				<p><i>---- 10/2020</i></p>
-				<p>Search and find your favorite TV shows! </p>
-			</div>
-
-			<h2><b>Giphy Party</b> <button class="btn btn-success" id="btn_giphy_party">Try it</button></h2>
-			<div>
-				<p><i>---- 10/2020</i></p>
-				<p>It's time for Giphy Party! </p>
-			</div>
-
-			<h2><b>Movies Rating</b> <button class="btn btn-success" id="btn_movies_rating">Try it</button></h2>
-			<div>
-				<p><i>---- 09/2020</i></p>
-				<p>Record and rating your favorite movies. </p>
-			</div>
-
-			<h2><b>Connect 4 Game</b> <button class="btn btn-success" id="btn_connect_4">Try it</button></h2>
-			<div>
-				<p><i>---- 09/2020</i></p>
-				<p>Let's play classic Connect 4 on the web. </p>
-			</div>
-
-			<h2><b>Meme Generator</b> <button class="btn btn-success" id="btn_meme_generator">Try it</button></h2>
-			<div>
-				<p><i>---- 09/2020</i></p>
-				<p>It is fun to enerate your own meme. </p>
-			</div>
-			
-			<h2><b>Memory Game</b> <button class="btn btn-success" id="btn_memory_game">Try it</button></h2>
-			<div>
-				<p><i>---- 09/2020</i></p>
-				<p>Test your memory! </p>
-			</div>
-
-			<h2><b>CodePlayer Website Design</b> <button class="btn btn-success" id="btn_codeplayer">Try it</button></h2>
-			<div>
-				<p><i>---- 09/2020</i></p>
-				<p>
-					A web app integrating HTML, CSS and JavaScript editor and the viewport of the designed web in a single browser window, which is easy to use for the beginner to practice web development.
-				</p>
-			</div>
-			
-			<h2><b>Reaction Tester Game</b> <button class="btn btn-success" id="btn_recreationTester">Try it</button></h2>
-			<div>
-				<p><i>---- 09/2020</i></p>
-				<p>A littile web game for fun to test your reaction time. </p>		
-			</div>			
-			
-			
-			<h2><b>Classification of Immunoprofiles With Combined Correlated Features Algorithm</b></h2>
-			<div>
-				<p><i>---- San Diego State University, CA, USA. 08/2014 – 10/2015</i></p>
-				<p>
-					Developed a new algorithm, called Combined Correlated Feature Selection (CCF) used in early cancer detection. 
-					The new algorithm increases the accuracy of the outcome prediction by 23.4%.			
-				</p>
-			</div>
-			
-			<h2><b>Computer Vision and Image Processing Development</b></h2>
-			<div>
-				<p><i>---- San Diego State University, CA, USA. 01/2014 - 05/2014</i></p>
-				<p>
-					Designed series of applications for image processing in Java, such as  Image Noise Reduction, Image Enhancement, Image Compression, and Outline Extraction.		
-				</p>
-			</div>
-			
-			
-			<h2><b>“Path Finding” Game Development</b></h2>
-			<div>
-				<p><i>---- San Diego State University, CA, USA. 01/2014 - 05/2014</i></p>
-				<p>
-					Designed and implemented a rule-based expert system in Java for a rover to move to a destination avoiding obstacles as fast as possible.
-				</p>
-			</div>
-			
-			
-			<h2><b>Design of Fuzzy Expert System for Stock Trading</b></h2>
-			<div>
-				<p><i>---- San Diego State University, CA, USA. 01/2014 - 05/2014</i></p>
-				<p>
-					Designed a stock trading program, which utilizes the fuzzy expert system in Java. The program made good profit which brought 15 times returns on the investment.
-				</p>
-			</div>			 -->
-      </div>
-    </div>
-  </div>
-
-
-  <!-- page 6: experience------------------------------- -->
-  <div id="experience" class="contentClass">
-    <div class="container">
-      <div class="row topRow center">EXPERIENCE</div>
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <h4><span class="glyphicon glyphicon-tasks"></span><b> Springboard Software Engineering Career Track</b></h4>
-          <div>
-            <h5><i>---- Springboard Coding Bootcamp, CA, USA. 09/2020 – 06/2021</i></h5>
-            <p>
-              700+ hours of hands-on course material, with 1:1 industry expert mentor
-              oversight, and completion of 4 in-depth portfolio projects. Mastering skills in front-end
-              web development, back-end web development, databases, and data structures and
-              algorithms.
-            </p>
-          </div>
-          <br>
-          <h4><span class="glyphicon glyphicon-tasks"></span><b> Research Assistant</b></h4>
-          <div>
-            <h5><i>---- San Diego State University, CA, USA. 08/2014 – 10/2015</i></h5>
-            <p>
-              Participated in the joint project between Neural Networks Laboratory at SDSU and Tumor Glycomic Laboratory
-              at NYU. Developed a new algorithm, called Combined Correlated Feature Selection (CCF) used in early cancer
-              detection.
-              The new algorithm increases the accuracy of the outcome prediction by 23.4%.
-            </p>
-          </div>
-          <br>
-          <h4><span class="glyphicon glyphicon-tasks"></span><b> Lecturer in Electronic Engineering Department</b></h4>
-          <div>
-            <h5><i>---- Wenhua University, China. 08/2008 - 02/2012</i></h5>
-            <p>
-            <ul>
-              <li>Taught electronics related courses </li>
-              <li>Worked for associated FPGA lab with Atera Company </li>
-              <li>Thesis adviser of senior students</li>
-            </ul>
-            </p>
-          </div>
-          <br>
-          <h4><span class="glyphicon glyphicon-tasks"></span><b> Lecturer in Telecommunication Department</b></h4>
-          <div>
-            <h5><i>---- Hankou University, China. 08/2007 - 07/2008</i></h5>
-            <p>
-            <ul>
-              <li>Taught electronics related courses</li>
-              <li>Thesis adviser of senior students</li>
-            </ul>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- page 7: interests------------------------------- -->
-  <div id="interests" class="contentClass">
-    <div class="container">
-      <div class="row topRow center">INTERESTS</div>
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-          <h4><span class="glyphicon glyphicon-tent"></span> Travelling with family</h4><br>
-          <h4><span class="glyphicon glyphicon-sunglasses"></span> Swimming</h4><br>
-          <h4><span class="glyphicon glyphicon-tree-conifer"></span> Hiking in early morning</h4><br>
-          <h4><span class="glyphicon glyphicon-book"></span> Reading</h4><br>
-          <h4><span class="glyphicon glyphicon-film"></span> Comedy Movies</h4><br>
-          <h4><span class="glyphicon glyphicon-picture"></span> Chinese painting</h4><br>
-          <h4><span class="glyphicon glyphicon-scissors"></span> Productive crafting</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- page 8: gallery------------------------------- -->
-  <div id="myGallery" class="contentClass">
-    <div class="container">
-      <div class="row topRow center">MY GALLERY</div>
-
-      <!-- ---------------------------------------------- -->
-      <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-          <li data-target="#myCarousel" data-slide-to="3"></li>
-          <li data-target="#myCarousel" data-slide-to="4"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img src="image/1.jpg" alt="me">
-          </div>
-
-          <div class="item">
-            <img src="image/2.jpg" alt="me">
-          </div>
-
-          <div class="item">
-            <img src="image/3.JPG" alt="me">
-          </div>
-
-          <div class="item">
-            <img src="image/4.JPG" alt="me">
-          </div>
-
-          <div class="item">
-            <img src="image/5.JPG" alt="me">
-          </div>
-        </div>
-
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-
-      <!-- ---------------------------------------------- -->
-
-
-    </div>
-  </div>
-
-  <!-- page 9: contact------------------------------- -->
-  <div id="contact" class="contentClass">
-    <div class="container">
-      <div class="row topRow center">CONTACT</div>
-      <div class="row">
-        <div class="col-md-2 col-md-offset-3">
-          <span class="glyphicon glyphicon-envelope"></span>
-        </div>
-        <div class="col-md-6">
+        <div class="col-md-5">
           <a href="mailto:guoting.hust@gmail.com">guoting.hust@gmail.com</a>
         </div>
       </div>
       <br>
+
       <div class="row">
-        <div class="col-md-2 col-md-offset-3">
-          <span class="glyphicon glyphicon-home"></span>
+        <div class="col-md-2 offset-md-3">
+          <i class="fas fa-phone-alt fa-2x"></i>
         </div>
-        <div class="col-md-6">
-          Dublin, CA, 94568
+        <div class="col-md-5">
+          619-905-8908
         </div>
       </div>
       <br>
-      <!-- <div class="row">
-			<div class="col-md-2 col-md-offset-3">
-				<span class="glyphicon glyphicon-earphone"></span>
-			</div>
-			<div class="col-md-6">
-				 619-905-8908			
-			</div>
-		</div>	 -->
-      <br>
       <div class="row">
-        <div class="col-md-2 col-md-offset-3">
-          <div id="finfme">
-            <h3>Find me on</h3>
+        <div class="col-md-2 offset-md-3">
+          <h3>Find me on</h3>
+        </div>
+        <div class="col-md-5">
+          <div class="row">
+            <div class="col-md-3 offset-md-3">
+              <a href="https://github.com/guoting1220" target="_blank">
+                <i class="fab fa-github fa-3x text-dark"></i>
+              </a>
+            </div>
+            <div class="col-md-3">
+              <a href="https://www.linkedin.com/in/guoting1220/" target="_blank">
+                <i class="fab fa-linkedin fa-3x"></i>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="col-md-1">
-          <a href="https://github.com/guoting1220" target="_blank"><span class="glyphicon"><img
-                src="image/github.png"></span></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Resume ------------------------------------------>
+  <div id="resume" class="page">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h2>My Resume</h2>
+          <hr>
         </div>
-        <div class="col-md-1">
-          <a href="https://www.linkedin.com/pub/ting-guo/99/a52/530" target="_blank"><span class="glyphicon"><img
-                src="image/linkedin.png"></span></a>
+      </div>
+      <div class="row">
+        <div class="col">
+          <embed src="images/ting_guo_resume.pdf" width="750" height="375">
         </div>
-        <!-- <div class="col-md-1">
-				<a href="https://twitter.com/TingGuoSpider" target="_blank"><span class="glyphicon"><img src="image/twitter.png"></span></a>
-			</div>			 -->
       </div>
     </div>
   </div>
 
 
-  <!-- =========================================================================================================================================== -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
-    integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-  <script src="script/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
 </body>
+
 
 </html>
