@@ -56,7 +56,7 @@ img { max-width: 100%; }
   min-height: 100vh;
   padding-top:120px;
   margin: 0 auto;
-  padding-bottom: 120px;
+  /* padding-bottom: 120px; */
 }
 
 .page h2 {
@@ -197,4 +197,11 @@ margin-bottom: 1rem;;
 
 .email a {
   color: #888;
+}
+
+#findme {
+  background-color: grey;
+  color: white;
+  border-radius: 6px;
+  width: 10rem;
 }
